@@ -1,0 +1,162 @@
+.nav-bar-dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-dropdown svg {
+    cursor: pointer;
+    font-size: 28px;
+    color: #484848;
+    /* Airbnb's primary text color */
+}
+
+.nav-bar-dropdown button {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.profile-dropdown {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 200px;
+    /* Adjusted for better fit */
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    /* Adjusted shadow for better appearance */
+    border-radius: 12px;
+    /* Increased radius for a smoother look */
+    overflow: hidden;
+    z-index: 1000;
+    padding: 10px 0;
+    /* Added padding for spacing */
+}
+
+.profile-dropdown.hidden {
+    display: none;
+}
+
+.profile-dropdown li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.profile-dropdown li:hover {
+    background: #f7f7f7;
+}
+
+.profile-dropdown button {
+    background: #f1641e;
+    border: none;
+    border-radius: 100px;
+    color: white;
+    width: auto;
+    text-align: center;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.username-profile span {
+    user-select: none;
+    /* Prevent text selection */
+}
+
+.profile-dropdown .divider-horizontal {
+    width: 100%;
+    height: 1px;
+    background: #e0e0e0;
+    /* Light grey color for divider */
+    margin: 10px 0;
+    /* Spacing around divider */
+}
+
+.profile-dropdown button:hover {
+    background: #d05518;
+}
+
+.hamburger {
+    margin-left: .5rem;
+    margin-right: .5rem;
+    top: .9rem;
+    height: 15px;
+    width: 15px;
+}
+
+.username-profile {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #484848;
+    border-radius: 50%;
+    padding: 6px;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+.username-profile:hover {
+    background-color: #d05518;
+    transform: scale(1.1);
+}
+
+.username-profile span {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+.username-profile-main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+    transition: ease 0.3s;
+}
+
+.username-profile-main-container:hover {
+    cursor: pointer;
+    border-radius: 100px;
+    background-color: #CFE8EF;
+    padding: 10px;
+}
+
+.username-profile-main-container:hover .username-profile {
+    background-color: #d05518;
+    transform: scale(1.1);
+}
+
+.shopping-cart-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+    transition: ease 0.3s;
+    color: #333;
+}
+
+.shopping-cart-button:hover {
+    cursor: pointer;
+    border-radius: 100px;
+    color: #112966;
+    background-color: #CFE8EF;
+    padding: 10px;
+}

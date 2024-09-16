@@ -1,0 +1,237 @@
+/* General Styles */
+
+/* SURNAN added css */
+
+.reviewButton-hflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 25px;
+}
+
+.reviewBtn{
+    border-radius: 10px;
+    border: none;
+    width: 4rem;
+    height: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+.updateBtn{
+    background-color: rgb(107, 104, 104);
+}
+
+.deleteBtn{
+    color: yellow;
+    background-color: pink;
+}
+/* SURNAN added css */
+.product-main-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1200px;
+    font-family: 'Arial', sans-serif;
+}
+
+.product-image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.product-image-gallery img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.product-image-gallery img:hover {
+    border: 2px solid #ff9900;
+    transform: scale(1.1);
+}
+
+.product-image-gallery img.active-thumbnail {
+    border: 2px solid #ff9900;
+    transform: scale(1.1);
+}
+
+/* Main Image Container */
+.product-main-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e1e1e1;
+    padding: 15px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    width: 100%;
+    height: 500px; /* Set a fixed height for the main image container */
+}
+
+.product-main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 500px;
+}
+
+.product-details h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.product-details h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #0f743b;
+}
+
+.product-details p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.product-details button {
+    padding: 12px 24px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+    width: 220px;
+    align-self: start;
+}
+
+.product-details button:hover {
+    background-color: #3e3e3e;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Reviews Container */
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 40px;
+    padding: 0 32px;
+}
+
+.reviews-container h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* ReviewCard Styles */
+.review-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-card__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.review-card__header .fa-star {
+    margin-right: 4px;
+}
+
+.review-card__content {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.review-card__header .fa-star {
+    color: gold;
+    transition: color 0.3s ease;
+}
+
+.review-card__header .fa-star.gray {
+    color: #ddd;
+}
+
+.review-card__content p {
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Horizontal Divider */
+.horizontal-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #e1e1e1;
+    margin: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-main-container {
+        flex-direction: column;
+        gap: 20px;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .product-main-image {
+        height: 300px;
+    }
+
+    .product-details h1 {
+        font-size: 1.8rem;
+    }
+
+    .product-details h2 {
+        font-size: 1.5rem;
+    }
+
+    .product-details button {
+        width: 100%;
+    }
+
+    .review-card {
+        padding: 12px;
+    }
+
+    .review-card__content {
+        font-size: 13px;
+    }
+}
